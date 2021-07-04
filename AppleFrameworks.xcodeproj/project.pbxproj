@@ -11,10 +11,12 @@
 		2F0E0260269158A000AB66D9 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E025F269158A000AB66D9 /* Tests_macOS.swift */; };
 		2F0E0262269158A000AB66D9 /* AppleFrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E02392691589E00AB66D9 /* AppleFrameworksApp.swift */; };
 		2F0E0263269158A000AB66D9 /* AppleFrameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E02392691589E00AB66D9 /* AppleFrameworksApp.swift */; };
-		2F0E0264269158A000AB66D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E023A2691589E00AB66D9 /* ContentView.swift */; };
-		2F0E0265269158A000AB66D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E023A2691589E00AB66D9 /* ContentView.swift */; };
 		2F0E0266269158A000AB66D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E023B2691589F00AB66D9 /* Assets.xcassets */; };
 		2F0E0267269158A000AB66D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0E023B2691589F00AB66D9 /* Assets.xcassets */; };
+		2F0E0277269158FB00AB66D9 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E0276269158FB00AB66D9 /* Framework.swift */; };
+		2F0E0278269158FB00AB66D9 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E0276269158FB00AB66D9 /* Framework.swift */; };
+		2F0E027D26915ACF00AB66D9 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E027C26915ACF00AB66D9 /* FrameworkGridView.swift */; };
+		2F0E027E26915ACF00AB66D9 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0E027C26915ACF00AB66D9 /* FrameworkGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		2F0E02392691589E00AB66D9 /* AppleFrameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworksApp.swift; sourceTree = "<group>"; };
-		2F0E023A2691589E00AB66D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2F0E023B2691589F00AB66D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F0E02402691589F00AB66D9 /* AppleFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0E02432691589F00AB66D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,8 @@
 		2F0E025B269158A000AB66D9 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0E025F269158A000AB66D9 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		2F0E0261269158A000AB66D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F0E0276269158FB00AB66D9 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		2F0E027C26915ACF00AB66D9 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				2F0E02392691589E00AB66D9 /* AppleFrameworksApp.swift */,
-				2F0E023A2691589E00AB66D9 /* ContentView.swift */,
+				2F0E0276269158FB00AB66D9 /* Framework.swift */,
+				2F0E027C26915ACF00AB66D9 /* FrameworkGridView.swift */,
 				2F0E023B2691589F00AB66D9 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -308,7 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0E0264269158A000AB66D9 /* ContentView.swift in Sources */,
+				2F0E027D26915ACF00AB66D9 /* FrameworkGridView.swift in Sources */,
+				2F0E0277269158FB00AB66D9 /* Framework.swift in Sources */,
 				2F0E0262269158A000AB66D9 /* AppleFrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F0E0265269158A000AB66D9 /* ContentView.swift in Sources */,
+				2F0E027E26915ACF00AB66D9 /* FrameworkGridView.swift in Sources */,
+				2F0E0278269158FB00AB66D9 /* Framework.swift in Sources */,
 				2F0E0263269158A000AB66D9 /* AppleFrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
