@@ -9,26 +9,19 @@ import SwiftUI
 
 struct FrameworkDetailsView: View {
     var framework: Framework
+    var showCloseButton: Bool
     @Binding var isShowingDetailsView: Bool
+    
     @State private var isShowingSafariView = false
     
     var body: some View {
         VStack {
-            HStack{
+            if(showCloseButton) {
+                XDismissButton(isShowing: $isShowingDetailsView)
                 Spacer()
-                Button {
-                    isShowingDetailsView = false
-                } label: {
-                    Image(systemName: "xmark")
-                        .foregroundColor(Color(.label))
-                        .imageScale(.large)
-                        .frame(width: 44, height: 44)
-                }
-            }.padding()
+            }
             
-            Spacer()
-            
-            FrameworkTitleView(framework: framework).padding()
+            FrameworkGridItem(framework: framework).padding()
             
             Text(framework.description)
                 .font(.body)
@@ -51,7 +44,11 @@ struct FrameworkDetailsView: View {
 
 struct FrameworkDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkDetailsView(framework: MockData.sampleFramework, isShowingDetailsView: .constant(false))
+        FrameworkDetailsView(
+            framework: MockData.sampleFramework,
+            showCloseButton: false,
+            isShowingDetailsView: .constant(false)
+        )
             .preferredColorScheme(.dark)
     }
 }
